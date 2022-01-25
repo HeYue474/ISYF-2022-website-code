@@ -1,0 +1,359 @@
+#sk_content{
+    text-align: justify;
+}
+
+#school line{
+    stroke: #dde6f0;
+    stroke-width: 40px;
+}
+
+#school text{ 
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180px;
+}
+
+#school .theme{
+    font-size: 130px;
+}
+
+#school.go text{
+    display: block;
+}
+
+#school.go .text-stroke {
+    fill: none;
+    stroke: white;
+    stroke-opacity: 0.8;
+    stroke-width: 5px;
+    stroke-dashoffset: 800;
+    stroke-dasharray: 800;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    animation: dash 1.2s ease-in-out forwards;
+}
+
+#school.go .text-stroke-2{
+    stroke-opacity: 1;
+    stroke-width: 100px;
+    stroke: #FFE6E6;
+    animation-delay: 2.2s;
+}
+
+#school.go .text-stroke:nth-child(3) {
+    animation-delay: .7s;
+}
+
+#school.go .text-stroke:nth-child(4) {
+    animation-delay: 1.4s;
+}
+
+#school.go .text-stroke:nth-child(6) {
+    animation-delay: 2.9s;
+}
+
+#school.go .text-stroke:nth-child(7) {
+    animation-delay: 3.6s;
+}
+
+  
+@keyframes dash {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#displayWrapper{
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    background: linear-gradient(90deg,
+    white 0 19.7%,
+    #dde6f0 19.7% 20.3%,
+    white 20.3% 100%);
+}
+
+#contentWrapper{
+    width: 98%;
+    height: auto;
+}
+
+#contentWrapper .circle{
+    width: 25%;
+    height: 100px;
+    z-index: 80;
+}
+
+#contentWrapper > .header{
+    display: flex;
+    align-items: center;
+    margin: 10% 0px 2% 0px;
+}
+
+#contentWrapper > .header > span{
+    display: inline-block;
+    line-height: normal;
+    width: 75%;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    color: #0a2540;
+    font-size: calc(22px + 0.7vw);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#contentWrapper > .content{
+    display: flex;
+    position: relative;
+    z-index: 90;
+    width: 95%;
+    padding: 20px;
+    border: 2px solid #dde6f0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 4px white;
+    margin: calc(25px + 1%) 0 calc(25px + 1%) 20px;
+}
+
+#contentWrapper > div:last-child{
+    margin-bottom: 50px;
+}
+
+#contentWrapper > .content > div{
+    display: inline-block;
+    width: 25%;
+    margin: auto;
+}
+
+#contentWrapper > .content > span{
+    display: inline-block;
+    width: 70%;
+    border-left: 1px solid #dde6f0;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(14px + 0.3vw);
+    line-height: 150%;
+    
+}
+
+#contentWrapper > .content > div > img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#contentWrapper > .content.theme > span{
+    width: 65%;
+    padding: 20px;
+}
+
+#contentWrapper > .theme > div{
+    width: 40%;
+    padding: 0 4%;
+}
+
+#contentWrapper > .content.pics > div{
+    width: 40%;
+}
+
+#contentWrapper > .objective > .first{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(18px + 0.4vw);
+    color: transparent;
+    padding: 0px 30px 0px 10px; 
+    border: 0px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+#contentWrapper > .objective > .first > p{
+    color: #029a9c;
+}
+
+
+#contentWrapper > .objective > .second{
+    padding-left: 30px;
+    width: 60%;
+}
+
+#contentWrapper > .participation > div{
+    width: 35%;
+}
+
+#contentWrapper > .participation > span > div{
+    width:  35%;
+}
+
+#contentWrapper > .participation > span{
+    width:  60%;
+    padding-left: 10px;
+}
+
+#contentWrapper > .participation > span h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(18px + 0.3vw);
+    margin-top: 10px;
+    text-align: center;
+}
+
+#contentWrapper > .participation > span > div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+#contentWrapper > .participation > span img{
+    display: inline-block;
+    width: 10%;
+    filter: invert(42%) sepia(72%) saturate(931%) hue-rotate(141deg) brightness(90%) contrast(98%);
+    margin: 0 0;
+}
+
+#contentWrapper > .participation > span h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(20px + 0.5vw);
+    display: inline-block;
+    width: 80%;
+    padding-left: 10px;
+    color: #029a9c;
+}
+
+#contentWrapper > .participation p{
+    margin: 10px 0;
+}
+
+
+#contentWrapper > .participation ul{
+    list-style-position: inside;
+    padding-bottom: 10px;
+    font-size: calc(14px + 0.2vw);
+}
+
+#contentWrapper > .organiser > div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-style: none;
+}
+
+#contentWrapper > .content.organiser > div > .hci{
+    vertical-align: middle;
+    display: inline-block;
+    width: 50%;
+    padding-right: 2%;
+    margin: 0 1%;
+}
+
+#contentWrapper > .content.organiser > div > .moe{
+    vertical-align: middle;
+    display: inline-block;
+    width: 45%;
+}
+
+#contentWrapper > .organiser > span{
+    width: 50%;
+}
+
+#contentWrapper > .organiser p{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1vw;
+}
+
+#contentWrapper > div.supporters{
+    display: inline-block;
+    padding: 0px;
+}
+
+#sk_content #contentWrapper > div.supporters > div{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contentWrapper > .content.supporters > div > *{
+    display: inline-block;
+    border-radius: 0;
+}
+
+#contentWrapper .content.supporters > div > div > *{
+    display: block;
+    width: 100%;
+}
+
+#contentWrapper .content.supporters > div > div > a{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.narrow, .wide{
+    padding: 15px 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+@media (min-width: 768px){
+    .wide{
+        display: flex !important;
+    }
+}
+
+@media (max-width: 767px){
+    #contentWrapper > .content.theme > div{
+        padding: 0;
+    }
+
+    #contentWrapper > .content{
+        display: table;
+    }
+
+    #contentWrapper > .content > span{
+        display: table-row !important;
+        border-left: 0px;
+    }
+
+    #contentWrapper > div.content > div{
+        display: table-row;
+    }
+
+    #contentWrapper > .content > div > img{
+        width: 70%;
+    }
+
+    #contentWrapper > .content p{
+        margin-top: calc(5px + 2%);
+    }
+
+    #contentWrapper > .content.pics > div > img{
+        margin: 15px auto;
+    }
+
+    #contentWrapper > .objective > .first{
+        padding: 0 10px !important;
+        width: 100% !important;
+    }
+
+    #contentWrapper > .objective > .first > p{
+        margin-bottom: calc(5px + 2%);
+    }
+
+    .narrow{
+        display: flex !important;
+    }
+}
+
