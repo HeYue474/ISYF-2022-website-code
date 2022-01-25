@@ -1,0 +1,431 @@
+body{
+    overflow-x: hidden;
+}
+
+@media (min-width: 768px){
+    #sk_content{
+      padding-top: 70px;
+    }
+  }
+
+#displayed-facil{
+    opacity: 1;
+}
+
+#committee-title > h1{
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 0 20px 20px;
+    font-size: calc(20px + 0.8vw);
+    text-align: left;
+}
+
+#committee-title > p{
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(16px + 0.3vw);
+    padding: 0 0 40px 20px;
+}
+
+#displayWrapper{
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+}
+
+#contentWrapper{
+    font-size: 0px;
+    height: auto;
+}
+
+#controlsWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contentWrapper .slide .title{
+    font-size: calc(22px + 0.7vw);
+    font-family: 'Montserrat', sans-serif;
+    color: #0a2540;
+    text-align: center;
+    margin-top: 1vw;
+    width: 100vw;
+}
+
+#contentWrapper .slide{
+    border-top: 5px solid #dde6f0;
+    border-bottom: 5px solid #dde6f0;
+    margin: 2vw 0;
+    width: 100vw;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#contentWrapper .slide .content{
+    width: 95vw;
+    border: 0;
+    margin: 1vw 0 1vw 2.5vw;
+}
+
+#controlsWrapper .prev, #controlsWrapper .next{
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 calc(10px + 1vw);
+}
+
+#controlsWrapper .dot{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 calc(5px + 1vw);
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#controlsWrapper .active.yellow, #controlsWrapper .yellow:hover{
+    background-color: #FFF06D;
+}
+
+#controlsWrapper .active.blue, #controlsWrapper .blue:hover{
+    background-color: #6DC2FF;
+}
+
+#controlsWrapper .active.green, #controlsWrapper .green:hover{
+    background-color: #30ffa4;
+}
+
+#controlsWrapper .active.red, #controlsWrapper .red:hover{
+    background-color: #FF6D6D;
+}
+  
+  
+
+#contentWrapper .circle{
+    width: 25%;
+    height: 100px;
+    z-index: 80;
+}
+
+#contentWrapper .header{
+    display: flex;
+    align-items: center;
+    margin: 10% 0px 2% 0px;
+}
+
+#contentWrapper .header > span{
+    display: inline-block;
+    line-height: normal;
+    width: 75%;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    color: #0a2540;
+    font-size: calc(22px + 0.7vw);
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#contentWrapper .content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 90;
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #dde6f0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 4px white;
+    margin: calc(25px + 1%) 0 calc(25px + 1%) calc(15px + 1vw);
+}
+
+#contentWrapper .content span{
+    display: inline-block;
+    width: 70%;
+    padding-left: 10px;
+    border-left: 1px solid #dde6f0;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(16px + 0.2vw);
+    line-height: 150%; 
+}
+
+@media (max-width: 767px){
+    #contentWrapper .content{
+        display: table;
+        width: 93%;
+    }
+
+    #contentWrapper .content span{
+        display: table-row !important;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+
+    #contentWrapper .content p{
+        margin-top: calc(5px + 2%);
+    }
+
+    #contentWrapper .pics.ano svg{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #contentWrapper .pics.dnd svg{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    div#facil-wrapper{
+        padding-bottom: 400px;
+    }
+
+    #contentWrapper #facil-wrapper div.content{
+        width: calc(50px + 20%);
+        margin-left: calc(-25px + 10%);
+        display: inline-block;
+    }
+
+    #contentWrapper #facil-wrapper div.desc{
+        display: inline-block;
+        top: calc(-90px - 9vw);
+        height: calc(65px + 30vw);
+        width: calc(50vw);
+        border-width: 0;
+    }
+
+    #contentWrapper #facil-wrapper div.desc p{
+        height: 100%;
+        width: 100%;
+        font-size: calc(11px + 0.8vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contentWrapper #facil-wrapper div.header{
+        margin-top: calc(5% + 100px);
+    }
+
+    div.facil{
+        top: auto;
+        bottom: 0;
+        right: -2vw;
+        width: 105vw;
+        height: min(62.6vw, 48.75vh);
+        margin-top: 0;
+        box-shadow: 0 -20px 20px 20px #010d21;
+        border-radius: 0;
+        border-bottom: 0;
+        z-index: 110;
+    }
+
+    div.facil svg{
+        width: min(80vw, 60vh);
+        height: min(62.5vw, 48.75vh);
+    }
+
+    div.facil svg line{
+        stroke-width: 0;
+    }
+
+    div.facil svg .name{
+        font-size: 3px;
+    }
+}
+
+#contentWrapper .content.pics{
+    justify-content: space-evenly;
+}
+
+#contentWrapper .pics span{
+    border: 0px;
+}
+
+#contentWrapper .pics svg{
+    width: 100%;
+}
+
+#contentWrapper .pics span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentWrapper .act span{
+    width: 36%;
+}
+
+#contentWrapper .act .text{
+    width: 27%;
+}
+
+#contentWrapper .ano span{
+    width: 35%;
+}
+
+#contentWrapper .ano .text{
+    width: 27%;
+}
+
+#contentWrapper .mnp span{
+    width: 55%;
+}
+
+#contentWrapper .mnp .text{
+    width: 32%;
+}
+
+#contentWrapper .dnd span{
+    width: 25%;
+}
+
+#contentWrapper .dnd .text{
+    width: 45%;
+}
+
+#contentWrapper .pics .text p{
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(16px + 0.1vw);
+    text-align: justify;
+    padding: 10px;
+    color: #333;
+}
+
+#popup{
+    z-index: 2000;
+    display: none;
+    position: fixed;
+    width: auto;
+    padding: calc(5px + 0.3vw);
+    font-size: 20px;
+    background-color: #1e2d32;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 black;
+
+}
+
+#popup .name{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(16px + 0.4vw);
+    color: white;
+}
+
+#popup .desc{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(15px + 0.2vw);
+    color: #b3c8ce;
+}
+
+#facil-wrapper{
+    background: linear-gradient(90deg,
+    #010d21 0 19.7%,
+    #dde6f0 19.7% 20.3%,
+    #010d21 20.3% 100%);
+    padding: 0 0 30vw 0;
+    font-size: 0;
+}
+
+#facil-title{
+    background-color: #010d21;
+}
+
+#facil-title h1{
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 0 30px 20px;
+    font-size: calc(20px + 0.8vw);
+    text-align: left;
+    color: #eeeeee;
+}
+
+#facil-title p{
+    font-family: 'Lato', sans-serif;
+    padding: 0 calc(20px + 5vw) 30px 20px;
+    font-size: calc(15px + 0.2vw);
+    color: #eeeeee;
+    text-align: justify;
+    line-height: 150%;
+}
+
+#contentWrapper #facil-wrapper .header{
+    margin: 20% 0 0 0;
+}
+
+#contentWrapper #facil-wrapper .header > span{
+    color: #fefefe;
+    font-size: calc(18px + 0.9vw);
+}
+
+#contentWrapper #facil-wrapper .content{
+    width: 18%;
+    margin: 0 0 10px 11%;
+    background-color: #010d21;
+    box-shadow: 0px 0px 0px 4px #010d21;
+    padding: 10px;
+}
+
+#contentWrapper #facil-wrapper .content img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+#contentWrapper #facil-wrapper .desc p{
+    font-size: calc(7px + 0.5vw);
+    font-family: 'Lato', sans-serif;
+    color: #fefefe;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.facil{
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    right: calc(5vw + 10px);
+    top: 50%;
+    width: calc(40px + 40vw);
+    height: calc(32.5px + 32.5vw);
+    margin-top: calc(-16.25px - 16.25vw);
+    border: 2px solid #dde6f0;
+    border-radius: calc(20px + 1vw);
+    align-items: center;
+    justify-content: center;
+    transition: opacity .3s ease-in-out;
+    background-color: #010d21;
+}
+
+.facil svg{
+    width: 100%;
+}
+
+.facil svg .title{
+    font-size: 3.5px;
+    font-family: 'Montserrat', sans-serif;
+    fill: white;
+}
+
+.facil svg .name{
+    font-size: 2.5px;
+    font-family: 'Lato', sans-serif;
+    fill: white;
+}
+
+.facil svg line{
+    stroke-width: 0.3;
+}
